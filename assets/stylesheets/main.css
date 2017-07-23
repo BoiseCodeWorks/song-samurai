@@ -1,0 +1,156 @@
+body, html{
+    margin:0;
+    padding:0;
+    background:black;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.background {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .background {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+.container {
+    background: transparent;
+	width: 20%;
+	margin: 5% 10% 0 5%;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+	position: fixed;
+}
+
+.button-container {
+    position: fixed;
+    float: left;
+    /* width: 20%; */
+    margin-left: 13%;
+}
+
+.tabs-container {
+    background: transparent;
+	width: 50%;
+	margin-top: 20%;
+	margin-right: 5%;
+	margin-bottom: 20px;
+	float: right;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.tabs {
+    background: rgba(120, 120, 120, 0.5);
+    position: relative;
+}
+
+tabs.tab a {
+    color: #611E18 !important;
+}
+
+tab.tab a.active {
+    color: #953827 !important;
+}
+
+.tab-content {
+    background: rgba(120, 120, 120, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+    color: white;
+    max-height: 50vh;
+}
+
+div.tab-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+div.tab-content::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+div.tab-content::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(128,128,128,0.8); 
+}
+
+div.tab-content::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(128,128,128,0.4); 
+}
+
+    .dragon-s {
+         max-height: 200px; 
+        margin-right: -20px;
+    }
+
+    .section {
+        margin: 25px;
+    }
+
+    h1 {
+      display: inline-block;
+      text-shadow: black 0.1em 0.1em 0.2em;
+      color: white;
+      font-family: 'Rock Salt', cursive;
+      font-size: 60px;
+    }
+
+    .stylized-font {
+        font-family: 'Rock Salt', cursive;
+    }
+
+    .btn {
+        background-color: #611E18;
+    }
+
+    .btn-floated {
+        margin: 0 auto; 
+        text-align: center;
+        position: fixed;
+    }
+
+    .btn:hover {
+        background-color: #953827;
+    }
+
+    ul {
+      margin: 40px;
+      font-size: 20px;
+      list-style: none;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 40px;
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+    
+    .heading {
+        margin-left: 10%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
